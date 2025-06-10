@@ -1,0 +1,10 @@
+# .coderabbit.yaml for CodeRabbit AI code review
+ai_code_review:
+  enabled: true
+  include:
+    - src/**/*.ts
+    - src/**/*.tsx
+  exclude:
+    - node_modules/**
+    - build/**
+    - dist/**
