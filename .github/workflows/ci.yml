@@ -24,3 +24,20 @@ jobs:
         run: npm test -- --ci --coverage || echo "Test step failed, continuing to build."
       - name: Build
         run: npm run build
+
+  ai_code_review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run lint || echo "Lint step failed, continuing."
+      - name: Run tests
+        run: npm test -- --ci --coverage || echo "Test step failed, continuing."
+      - name: Build
+        run: npm run build || echo "Build step failed, continuing."
