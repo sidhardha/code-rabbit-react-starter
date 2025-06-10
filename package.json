@@ -15,7 +15,8 @@
   },
   "scripts": {
     "lint": "eslint src --ext .ts,.tsx",
-    "test": "jest --config jest.config.cjs"
+    "test": "jest --config jest.config.cjs",
+    "build": "tsc --project tsconfig.json"
   },
   "dependencies": {
     "@eslint/js": "^9.28.0"
