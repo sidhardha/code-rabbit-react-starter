@@ -12,5 +12,9 @@
   },
   "scripts": {
     "lint": "eslint src --ext .ts,.tsx"
-  }
+  },
+  "dependencies": {
+    "@eslint/js": "^9.28.0"
+  },
+  "type": "module"
 }
