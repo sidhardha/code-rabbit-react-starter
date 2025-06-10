@@ -8,3 +8,5 @@ ai_code_review:
     - node_modules/**
     - build/**
     - dist/**
+reviews:
+  review_status: false
